@@ -7,18 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS from CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
     <!-- link to custom stylesheet (always require after Bootstrap) -->
-    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
-    <!-- jQuery from CDN -->
-
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+   <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <!-- link to custom javascript file (always require after external JS libraries) -->
 
     <title>Tic Tac Toe</title>
   </head>
   <body>
+
+
     <div class="container">
       <div class="row text-center">
         <div class="col-md-12">
@@ -26,24 +29,59 @@
           <hr>
         </div>
       </div>
-      <div class="row">
+        <div class="scoreboard">
+          <div class="Player 1">
+          <h2>Player 1</h2>
+          <h2 id="player1">0</h2>
+          </div>
+          <div class="Player 2">
+          <h2>Player 2</h2>
+          <h2 id="player2">0</h2>
 
-        <!-- a column represents our game board -->
-        <!-- the `offset` class helps us center the board -->
-        <div class="col-md-6 col-md-offset-3" id="board">
-
-          <!-- you can put rows inside of columns! -->
-          <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
-          <div class="row">
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
           </div>
 
 
+          </div>
+
+      <div class="row">
+        <!-- a column represents our <ga></ga>me board -->
+        <!-- the `offset` class helps us center the board -->
+
+          <div class="col-md-6 col-md-offset-3" id="board">
+
+
+          <div class="row" id="main">
+
+
+          <!-- first row -->
+            <div class="col-md-4 box" class="box " id="1"></div>
+            <div class="col-md-4 box" class="box v" id="2"></div>
+            <div class="col-md-4 box" class="box " id="3"></div>
+
+        <!-- second row -->
+            <div class="col-md-4 box" class="box h" id="4"></div>
+            <div class="col-md-4 box" class="box h v" id="5"></div>
+            <div class="col-md-4 box" class="box h" id="6"></div>
+
+
+          <!-- third row -->
+            <div class="col-md-4 box" class="box " id="7"></div>
+            <div class="col-md-4 box" class="box v" id="8"></div>
+            <div class="col-md-4 box" class="box " id="9"></div>
+
+
+
+          </div>
+
+          <br>
+          <br>
+          <button type="button" name="button" id="reset">RESET</button>
+
 
         </div>
+
       </div>
     </div>
+<script src="js/app.js" type="text/javascript"></script>
   </body>
 </html>
