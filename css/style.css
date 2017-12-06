@@ -44,9 +44,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	  line-height: 1;
-    background-color: #8DB0CC;
-		width: 10%;
-		height: 60%;
+    background: url('../img/airplane-view.jpg');
+		background-size: cover;
 
 }
 ol, ul {
@@ -91,6 +90,7 @@ table {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	min-height: 1px;
+	color: white;
 }
 
 
@@ -113,13 +113,15 @@ table {
 }
 #reset{
   margin-top: 20px;
-	background-color: #8DB0CC;
+	opacity: .1;
 	font-family: 'Codystar';
 	position: relative;
 	border:#EAEEF2 ;
 	font-size: 25px;;
 	font-weight: bold;
+	color: black;
 }
 .box:hover{
 	background-color: #EAEEF2;
+	opacity: .4;
 }
