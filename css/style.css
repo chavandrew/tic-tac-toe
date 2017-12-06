@@ -112,7 +112,7 @@ table {
 }
 #reset{
   margin-top: 20px;
-	opacity: .1;
+	opacity: .2;
 	font-family: 'Codystar';
 	position: relative;
 	border:#EAEEF2 ;
@@ -122,7 +122,7 @@ table {
 }
 .box:hover{
 	background-color: #EAEEF2;
-	opacity: .4;
+	opacity: .3;
 }
 #player1, #player2{
 	color: white;
