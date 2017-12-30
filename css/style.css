@@ -121,8 +121,9 @@ table {
 	color: black;
 }
 .box:hover{
-	background-color: #EAEEF2;
-	opacity: .3;
+background-color: #EAEEF2;
+ opacity: .3;
+ color: black;
 }
 #player1, #player2{
 	color: white;
